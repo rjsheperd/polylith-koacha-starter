@@ -8,4 +8,5 @@
                         :release "v[0-9]*"}
  :projects             {"development" {:alias "dev"}
                         "example"     {:alias "e"}}
- :test                 {:create-test-runner polylith-kaocha.test-runner/create}}
+ :test                 {:create-test-runner polylith-kaocha.test-runner/create
+                        :polylith-kaocha/config-resource "dev-tests.edn"}}

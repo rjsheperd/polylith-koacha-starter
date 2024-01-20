@@ -6,4 +6,4 @@
   (testing "Concatenating two strings"
     (let [s1 "Hello "
           s2 "World!"]
-    (is (= (str s1 s2) (stringer/my-concat s1 s2))))))
+      (is (= (str s1 s2) (stringer/my-concat s1 s2))))))

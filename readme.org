@@ -1,0 +1,17 @@
+#+TITLE: Koacha + Polylith Starter
+#+AUTHOR: RJ Sheperd
+
+
+** Purpose
+
+Provide an example of using Polylith, the Koacha test runner to produce
+ JUnit XML outputs for testing.
+
+** Setup
+
+1. Clone this repo
+2. Run tests:
+#+BEGIN_SRC bash
+  clojure -M:poly test
+#+END_SRC
+3. Examine outputs in ~target/junit.xml~
