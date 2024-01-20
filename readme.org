@@ -4,8 +4,8 @@
 
 ** Purpose
 
-Provide an example of using Polylith, the Koacha test runner to produce
- JUnit XML outputs for testing.
+Provide an example of using [[https://cljdoc.org/d/polylith/clj-poly/][Polylith]], the [[https://github.com/imrekoszo/polylith-kaocha][Koacha test runner]] and the 
+ [[https://github.com/lambdaisland/kaocha-junit-xml][JUnit XML plugin]] for testing.
 
 ** Setup
 
@@ -14,4 +14,4 @@ Provide an example of using Polylith, the Koacha test runner to produce
 #+BEGIN_SRC bash
   clojure -M:poly test
 #+END_SRC
-3. Examine outputs in ~target/junit.xml~
+1. Examine outputs in ~target/junit.xml~
