@@ -1,7 +1,8 @@
 {:paths []
  :deps  {org.clojure/clojure          {:mvn/version "1.11.0-beta1"}
          org.clojure/tools.deps.alpha {:mvn/version "0.11.918"}
-         poly/stringer                {:local/root "../../components/stringer"}}
+         poly/stringer                {:local/root "../../components/stringer"}
+         poly/stapler                 {:local/root "../../components/stapler"}}
  :aliases
  {:test
   {:extra-deps {polylith-kaocha/kaocha-wrapper

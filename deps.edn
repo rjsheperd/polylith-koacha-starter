@@ -1,6 +1,7 @@
 {:paths ["resources"]
  :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
-         poly/stringer       {:local/root "components/stringer"}}
+         poly/stringer       {:local/root "components/stringer"}
+         poly/stapler        {:local/root "components/stapler"}}
  :aliases
  {:dev  {}
   :poly {:extra-deps
