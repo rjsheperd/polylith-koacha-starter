@@ -1,0 +1,11 @@
+{:paths []
+ :deps  {org.clojure/clojure          {:mvn/version "1.11.0-beta1"}
+         org.clojure/tools.deps.alpha {:mvn/version "0.11.918"}
+         poly/stringer                {:local/root "../../components/stringer"}}
+ :aliases
+ {:test
+  {:extra-deps {polylith-kaocha/kaocha-wrapper
+                {:git/url   "https://github.com/imrekoszo/polylith-kaocha"
+                 :git/tag   "v0.8.2"
+                 :git/sha   "d1fcd40"
+                 :deps/root "projects/kaocha-wrapper"}}}}}

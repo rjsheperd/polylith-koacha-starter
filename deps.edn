@@ -1,0 +1,26 @@
+{:paths ["resources"]
+ :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
+         poly/stringer       {:local/root "components/stringer"}}
+ :aliases
+ {:dev  {}
+  :poly {:extra-deps
+         {polylith/clj-poly
+          {:mvn/version "0.2.18"}
+          polylith-kaocha.components/util
+          {:git/url   "https://github.com/imrekoszo/polylith-kaocha"
+           :git/tag   "v0.8.2"
+           :git/sha   "d1fcd40"
+           :deps/root "components/util"}
+          polylith-kaocha/kaocha-wrapper
+          {:git/url   "https://github.com/imrekoszo/polylith-kaocha"
+           :git/tag   "v0.8.2"
+           :git/sha   "d1fcd40"
+           :deps/root "projects/kaocha-wrapper"}
+          polylith-kaocha/test-runner
+          {:git/url   "https://github.com/imrekoszo/polylith-kaocha"
+           :git/tag   "v0.8.2"
+           :git/sha   "d1fcd40"
+           :deps/root "projects/test-runner"}}
+         :main-opts ["-m" "polylith.clj.core.poly-cli.core"]}
+  :test {:extra-paths [] 
+         :jvm-opts    ["-XX:-OmitStackTraceInFastThrow"]}}}
